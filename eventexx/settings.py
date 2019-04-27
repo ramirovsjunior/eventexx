@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'test_without_migrations',
     'eventexx.core',
-    'eventexx.subscriptions',
+    'eventexx.subscriptions.apps.SubscriptionsConfig',
 ]
 
 MIDDLEWARE = [
