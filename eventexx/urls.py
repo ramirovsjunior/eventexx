@@ -17,11 +17,12 @@ from django.contrib import admin
 from django.urls import path
 
 import eventexx.core.views
-from eventexx.subscriptions.views import subscribe
+from eventexx.subscriptions.views import subscribe, detail
 
 
 urlpatterns = [
     path('', eventexx.core.views.home),
     path('inscricao/', subscribe),
+    path('inscricao/<int:pk>/', detail),
     path('admin/', admin.site.urls),
 ]
